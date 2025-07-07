@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Alphabetical Order</title>
+</head>
+<body>
+
+    <h2>JavaScript function that returns a passed string with letters in alphabetical order:</h2>
+    
+    <p>string: 'webmaster'</p>
+    <p>Expected Output: <span id="alphaOutput"></span></p>
+
+    <script>
+        function sortAlphabetically(str) {
+            return "'" + str.split('').sort().join('') + "'";
+        }
+
+        let inputStr = 'webmaster';
+        document.getElementById("alphaOutput").innerText = sortAlphabetically(inputStr);
+
+    </script>
+
+</body>
+</html>
